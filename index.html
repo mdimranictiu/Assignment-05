@@ -20,9 +20,9 @@
 </head>
 
 <body class="lexend-font">
-    <header class="bg-[#F9F7F3] py-8 max-sm:hidden">
-        <nav class="flex justify-around ">
-            <button class="btn px-12 bg-[#B4F461] text-[#111111]  font-semibold text-xl"><a href="./blog.html">Blog</a></button>
+    <header class="bg-[#F9F7F3] sticky top-0 py-8">
+        <nav class="flex justify-around max-sm:flex-col max-sm:justify-center ">
+            <a href="./blog.html"> <button class="btn px-12 bg-[#B4F461] text-[#111111]  font-semibold text-xl">Blog</button></a>
             <div class="flex items-center space-x-2">
                 <img src="./assets/logo.png"  alt="Logo Image">
                 <strong class="text-xl">Donate Bangladesh</strong>
@@ -35,13 +35,15 @@
             </div>
         </nav>
     </header>
-    <main class="mt-20">
-        <div class="flex justify-center space-x-5">
-            <button class="btn text-[#111111] bg-[#B4F461] text-xl px-10 ">Donation</button>
-            <button class="btn text-[#646262] bg-white text-xl px-10 ">History</button>
+    <main class="">
+        <div id="scroll" class="py-16 sticky max-sm:top-40 top-24 ">
+            <div class="flex justify-center space-x-5	">
+                <button class="btn text-[#111111] bg-[#B4F461] text-xl px-10 ">Donation</button>
+                <button class="btn text-[#646262] bg-white text-xl px-10 ">History</button>
+            </div>
         </div>
         <!-- Items start -->
-        <div class="mt-20  w-4/5 mx-auto">
+        <div class="mt-20 border  w-4/5 mx-auto">
             <!-- Item one start -->
             <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
                 <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
@@ -60,7 +62,7 @@
             <!-- item two start -->
             <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
                 <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
-                <div class="max-sm:mt-10 max-lg:mt-10">
+                <div class="max-sm:mt-10 max-lg:mt-10 ">
                     <div class="flex justify-center space-x-2 text-base bg-[#eee8e8] w-52 max-sm:w-3/4 p-2 text-[#302f2f] border rounded-lg	 "><img src="./assets/coin.png" alt="">
                     <strong>0</strong>
                     <strong>BDT</strong></div>
@@ -120,3 +122,4 @@
 </body>
 
 </html>
+<script src="app.js"></script>
