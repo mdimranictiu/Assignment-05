@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -22,8 +22,8 @@
 
 <body class="lexend-font">
     <header class="bg-[#F9F7F3] sticky top-0 py-8">
-        <nav class="flex justify-around max-sm:block max-sm:gap-5 max-sm:justify-center ">
-            <a href="./index.html"> <button class="btn px-12 bg-[#B4F461] text-[#111111]  font-semibold text-xl">Blog</button></a>
+        <nav class="flex justify-around max-sm:flex-col max-sm:gap-5 max-sm:items-center">
+            <a href="./index.html"> <button class="btn px-12 bg-[#B4F461] text-[#111111]  font-semibold text-xl">Home</button></a>
             <div class="flex items-center space-x-2">
                 <img src="./assets/logo.png"  alt="Logo Image">
                 <strong class="text-xl">Donate Bangladesh</strong>
@@ -45,14 +45,14 @@
 
       <div class="mt-12 border border-gray-400 text-justify  rounded-lg">
         <div class="border-b-2 flex justify-between items-center p-8">
-            <div>
-                <h2 class="text-xl font-semibold" id="q">What is the Document Object Model (DOM)?xxxxxxxxxxxxxxxxxxxxxxxzzzzzzzzzzzzzzzzzzsssssssssssssss</h2>
+            <div class="pr-4">
+                <h2 class="text-xl font-semibold" id="q">What is the Document Object Model (DOM)?</h2>
                 <p id="q1" class="text-base font-normal hidden my-3">Document Object Model is the data representation of a website component.</p>
             </div>
             <i id="q2" class="fa-solid fa-angle-down"></i>
         </div>
         <div class="border-b-2 flex justify-between items-center p-8">
-            <div>
+            <div class="pr-4">
                 <h2 class="text-xl font-semibold">How do you select an element from the DOM?</h2>
                 <p class="text-base font-normal my-3">I can select an element different ways likes select via Id, Class, tagname etc.</p>
             </div>
@@ -60,16 +60,17 @@
         </div>
 
         <div class="border-b-2 flex justify-between items-center p-8">
-            <div>
+            <div class="pr-4">
                 <h2 class="text-xl font-semibold">What is event delegation in the context of the DOM, and why is it useful?</h2>
                 <p class="text-base font-normal my-3">Its a even handling process. By this we can handle events at a higher level in the DOM tree instead of the event actually occur. By using it, our code complexity will be reduce and performance of website will be high.</p>
             </div>
             <i class="fa-solid fa-angle-down"></i>
         </div>
         <div class=" flex justify-between items-center p-8">
-            <div class="text-wrap">
-                <h2 class="text-xl font-semibold"></h2>
-                <p class="text-base font-normal my-3"></p>
+            <div class="pr-4">
+                <h2 class="text-xl font-semibold">How do you manipulate an element's attributes and styles using the DOM?</h2>
+                <p class="text-base font-normal my-3 max-sm:hidden">We can manipulate elements  attributes by getAttribute(), setAttribute and removeAttribue(). Example: document.getElementById('img') .getAttribute('src') . We can also <br> give styles to an element.  Example: document.getElementById ('hh').style.display="block"; So thus way we can maniupulate DOM.</p>
+                <p class="text-base font-normal my-3 hidden max-sm:block">We can manipulate elements  <br> attributes by getAttribute(), <br> setAttribute and removeAttribue(). <br> Example: document.getElementById<br>('img') .getAttribute('src') . We can also <br> give styles to an element. <br> Example: document.getElementById <br>('hh').style.display="block"; So thus way we can maniupulate DOM.</p>
             </div>
             <i class="fa-solid fa-angle-down"></i>
         </div>
@@ -78,7 +79,7 @@
     </main>
     <footer class="bg-[#F9F7F3]  py-20 mt-52"></footer>
     <!-- How do you manipulate an element's attributes and styles using the DOM? -->
-    <!-- We can manipulate elements attributes by getAttribute(), setAttribute and removeAttribue(). Example: document.getElementById('img').getAttribute('src') . We can also give styles to an element. <br> Example: document.getElementById('hh').style.display="block"; So thus way we can maniupulate DOM. -->
+    <!--  -->
 </body>
 
 </html>
