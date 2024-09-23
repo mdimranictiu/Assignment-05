@@ -16,6 +16,9 @@
             font-optical-sizing: auto;
 
         }
+        .bg-color{
+            background: #B4F461;
+        }
     </style>
 </head>
 
@@ -29,90 +32,86 @@
             </div>
             <div class="flex items-center space-x-1">
                 <img src="./assets/coin.png" alt="Coin Image">
-                <strong class="text-[#746f6f] text-xl">5000 </strong>
+                <strong id="balanceAmount" class="text-[#746f6f] text-xl">5000 </strong>
                 <strong class="text-[#746f6f] text-xl">BDT</strong>
 
             </div>
         </nav>
     </header>
-    <main class="">
+    <main>
         <div id="scroll" class="py-16 sticky max-sm:top-52 top-24 ">
             <div class="flex justify-center space-x-5	">
-                <button class="btn text-[#111111] bg-[#B4F461] text-xl px-10 ">Donation</button>
-                <button class="btn text-[#646262] bg-white text-xl px-10 ">History</button>
+                <button id="donate-section-show" class="btn text-[#111111] bg-[#B4F461] text-xl px-10 ">Donation</button>
+                <button id="history-section-show" class="btn text-[#646262] text-xl px-10 ">History</button>
             </div>
         </div>
         <!-- Items start -->
-        <div class="mt-20  w-4/5 mx-auto">
+        <div id="donate-section" class="mt-20  w-4/5 mx-auto">
             <!-- Item one start -->
             <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
                 <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
                 <div class="max-sm:mt-10 max-lg:mt-10">
                     <div class="flex justify-center space-x-2 text-base bg-[#eee8e8] w-52 max-sm:w-3/4 p-2 text-[#302f2f] border rounded-lg	 "><img src="./assets/coin.png" alt="">
-                    <strong>0</strong>
+                    <strong id="noakhali_amount">10</strong>
                     <strong>BDT</strong></div>
-                    <h2 class="text-xl font-semibold mt-4 ">Donate For Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-xl font-semibold mt-4 ">Donate <span id="noakhali_title" >For Flood at Noakhali, Bangladesh</span></h2>
                     <p class="mt-5 text-justify text-base mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea mollitia nobis nihil porro labore dolorum tenetur provident quo, atque voluptatum error cupiditate natus iste quis? Fugit amet laborum aliquam nesciunt vel labore nihil nam quas? Provident quasi quos earum sunt nemo rem, sequi consequatur illum, maxime aperiam iste numquam.</p>
                     <br>
-                    <input type="text" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
-                    <button class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+                    <input id="input_amount_noakhali" type="number" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
+                    <button id="noakhali_donate_btn" class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
             <!-- item one end -->
             <!-- item two start -->
             <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
-                <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
-                <div class="max-sm:mt-10 max-lg:mt-10 ">
+                <div class="rounded-xl"><img src="./assets/feni.png" class="w-full" alt=""></div>
+                <div class="max-sm:mt-10 max-lg:mt-10">
                     <div class="flex justify-center space-x-2 text-base bg-[#eee8e8] w-52 max-sm:w-3/4 p-2 text-[#302f2f] border rounded-lg	 "><img src="./assets/coin.png" alt="">
-                    <strong>0</strong>
+                    <strong id="feni_amount">20</strong>
                     <strong>BDT</strong></div>
-                    <h2 class="text-xl font-semibold mt-4 ">Donate For Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-xl font-semibold mt-4 ">Donate <span id="feni_title" >For Flood Relief in Feni, Bangladesh</span></h2>
                     <p class="mt-5 text-justify text-base mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea mollitia nobis nihil porro labore dolorum tenetur provident quo, atque voluptatum error cupiditate natus iste quis? Fugit amet laborum aliquam nesciunt vel labore nihil nam quas? Provident quasi quos earum sunt nemo rem, sequi consequatur illum, maxime aperiam iste numquam.</p>
                     <br>
-                    <input type="text" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
-                    <button class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+                    <input id="input_amount_feni" type="number" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
+                    <button id="feni_donate_btn" class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
             <!-- item two end -->
                <!-- item three start -->
-            <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
-                <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
+               <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
+                <div class="rounded-xl"><img src="./assets/quota-protest.png" class="w-full" alt="IMG"></div>
                 <div class="max-sm:mt-10 max-lg:mt-10">
                     <div class="flex justify-center space-x-2 text-base bg-[#eee8e8] w-52 max-sm:w-3/4 p-2 text-[#302f2f] border rounded-lg	 "><img src="./assets/coin.png" alt="">
-                    <strong>0</strong>
+                    <strong id="quota_amount">20</strong>
                     <strong>BDT</strong></div>
-                    <h2 class="text-xl font-semibold mt-4 ">Donate For Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-xl font-semibold mt-4 ">Donate <span id="quota_title" >for Aid Quota Movement, Bangladesh</span></h2>
                     <p class="mt-5 text-justify text-base mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea mollitia nobis nihil porro labore dolorum tenetur provident quo, atque voluptatum error cupiditate natus iste quis? Fugit amet laborum aliquam nesciunt vel labore nihil nam quas? Provident quasi quos earum sunt nemo rem, sequi consequatur illum, maxime aperiam iste numquam.</p>
                     <br>
-                    <input type="text" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
-                    <button class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+                    <input id="input_amount_quota" type="number" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
+                    <button id="quota_donate_btn" class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
             <!-- item three end -->
                <!-- item four start -->
-            <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
-                <div class="rounded-xl"><img src="./assets/noakhali.png" class="w-full" alt=""></div>
+               <div class="grid grid-cols-2 items-center my-10  w-4/5 mx-auto border rounded-2xl p-7 border-zinc-300 max-lg:grid-cols-1 max-sm:grid-cols-1 max-sm:w-full max-lg:w-full gap-6">
+                <div class="rounded-xl"><img  src="./assets/gaza.png" class="w-full rounded-xl" alt="IMG"></div>
                 <div class="max-sm:mt-10 max-lg:mt-10">
                     <div class="flex justify-center space-x-2 text-base bg-[#eee8e8] w-52 max-sm:w-3/4 p-2 text-[#302f2f] border rounded-lg	 "><img src="./assets/coin.png" alt="">
-                    <strong>0</strong>
+                    <strong id="gaza_amount">50</strong>
                     <strong>BDT</strong></div>
-                    <h2 class="text-xl font-semibold mt-4 ">Donate For Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="text-xl font-semibold mt-4 ">Donate <span id="gaza_title" >for Gaza People From Bangladesh</span></h2>
                     <p class="mt-5 text-justify text-base mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ea mollitia nobis nihil porro labore dolorum tenetur provident quo, atque voluptatum error cupiditate natus iste quis? Fugit amet laborum aliquam nesciunt vel labore nihil nam quas? Provident quasi quos earum sunt nemo rem, sequi consequatur illum, maxime aperiam iste numquam.</p>
                     <br>
-                    <input type="text" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
-                    <button class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
+                    <input id="input_amount_gaza" type="number" placeholder="Write Donation Amount" class="font-semibold outline-none text-xl input w-full">
+                    <button id="gaza_donate_btn" class="btn w-full mt-5 bg-[#B4F461] text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
             <!-- item four end -->
         </div>
         <!-- items end -->
          <!-- History section start -->
-          <div class="mt-20  w-4/5 mx-auto hidden">
-           <div class="w-4/5 mx-auto max-sm:w-full max-lg:w-full">
-            <div class="rounded-2xl p-7 border border-zinc-300">
-                <h2 class="text-xl font-bold text-[#111111] mb-5">96500 Taka is Donated for X</h2>
-                <p class="font-normal text-base text-[#b6b3b3]">Date: Tue Sep ...........</p>
-            </div>
+          <div id="history-section" class="mt-20  w-4/5 mx-auto hidden">
+           <div id="history_parent" class="w-4/5 mx-auto max-sm:w-full max-lg:w-full">
            </div>
 
           </div>
@@ -123,3 +122,5 @@
 
 </html>
 <script src="app.js"></script>
+<script src="./JS/utilities.js"></script>
+<script src="./features.js"></script>
