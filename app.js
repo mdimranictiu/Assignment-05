@@ -1,9 +1,9 @@
 
 function blurScroll() {
     if (window.scrollY >= 100) { 
-        document.getElementById('scroll').classList.add('bg-[#F9F7F3]');
+        document.getElementById('scroll').classList.add('backdrop-blur-xl');
     } else {
-        document.getElementById('scroll').classList.remove('bg-[#F9F7F3]');
+        document.getElementById('scroll').classList.remove('backdrop-blur-xl');
     }
 }
 window.onscroll = ()=> {
