@@ -32,18 +32,8 @@ function validationInput(id1,id2,id3){
     `
     const history_parent=document.getElementById('history_parent');
     history_parent.appendChild(history_creation);
- 
-    document.getElementById('modal').classList.remove('hidden');
-   
-  
+   document.getElementById('my_modal_5').showModal();
    }
+   
    document.getElementById(id1).value ="";
 }
-
-document.getElementById('closebtn').addEventListener('click',(e)=>{
-    e.preventDefault();
-    document.getElementById('modal').classList.add('hidden')
-})
-
-
-
