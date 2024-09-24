@@ -24,9 +24,10 @@
 </head>
 
 <body class="lexend-font">
-    <header class="bg-[#F9F7F3] sticky top-0 z-20 py-8">
-        <nav class="flex justify-around max-sm:flex-col max-sm:gap-5 max-sm:items-center">
-            <a href="./blog.html"> <button 
+    <header id="scroll" class="sticky top-0 z-20 ">
+        <!-- Navbar start -->
+        <nav id="nav" class="flex bg-[#F9F7F3] py-8 justify-around max-sm:flex-col max-sm:gap-5 max-sm:items-center">
+            <a href="./blog.html"> <button
                     class="btn px-12 bg-[#B4F461] text-[#111111]  font-semibold text-xl">Blog</button></a>
             <div class="flex items-center space-x-2">
                 <img src="./assets/logo.png" alt="Logo Image">
@@ -39,35 +40,38 @@
 
             </div>
         </nav>
-    </header>
-    <!-- Modal -->
-
-<dialog id="my_modal_5" class="modal modal-center">
-  <div class="modal-box rounded-lg max-sm:mb-12 max-sm:w-4/5 max-sm:mx-auto">
-    <div class="flex  items-center  flex-col max-sm:p-0  p-16 bg-white  rounded-xl">
-        <h2 class="text-5xl font-bold max-sm:text-4xl mt-8">Congrats!</h2>
-        <img class="mt-8 w-14 max-sm:w-8" src="./assets/coin.png" alt="">
-        <h3 class="mt-5 text-xl text-center text-gray-400">You have donated for Humankind.</h3>
-        <h4 class="mt-5 text-3xl max-sm:text-2xl font-bold">Successfully</h4>
-    
-      <form method="dialog">
-    
-        <button class="btn mt-5 text-gray">Close Confirmation</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-
-<!-- modal end -->
-    <main>
-
-        <div id="scroll" class="py-16 sticky max-sm:top-52 top-24 ">
+        <!-- Navbar end -->
+        <div class="py-16 sticky max-sm:top-52 top-24 ">
             <div class="flex justify-center space-x-5	">
                 <button id="donate-section-show"
                     class="btn text-[#111111] bg-[#B4F461] text-xl px-10 ">Donation</button>
                 <button id="history-section-show" class="btn text-[#646262] text-xl px-10 ">History</button>
             </div>
         </div>
+    </header>
+    <!-- Modal -->
+
+    <dialog id="my_modal_5" class="modal modal-center">
+        <div class="modal-box rounded-lg max-sm:mb-12 max-sm:w-4/5 max-sm:mx-auto">
+            <div class="flex  items-center  flex-col max-sm:p-0  p-16 bg-white  rounded-xl">
+                <h2 class="text-5xl font-bold max-sm:text-4xl mt-8">Congrats!</h2>
+                <img class="mt-8 w-14 max-sm:w-8" src="./assets/coin.png" alt="">
+                <h3 class="mt-5 text-xl text-center text-gray-400">You have donated for Humankind.</h3>
+                <h4 class="mt-5 text-3xl max-sm:text-2xl font-bold">Successfully</h4>
+
+                <form method="dialog">
+
+                    <button class="btn mt-5 text-gray">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <!-- modal end -->
+    <main>
+
+
         <!-- Items start -->
         <div id="donate-section" class="mt-20  w-4/5 mx-auto">
             <!-- Item one start -->
@@ -83,7 +87,10 @@
                     </div>
                     <h2 class="text-xl font-semibold mt-4 ">Donate <span id="noakhali_title">For Flood at Noakhali,
                             Bangladesh</span></h2>
-                    <p class="mt-5 text-justify text-base mb-5">A large amount of people are lost their home and goods in 2024 due to the tragetic flood. Noakhali is underwater for 10 days. The affected people are trying to recover. Government and NGO are try to aid them.  So our team try to aid them. You can donate money for Noakhali people.</p>
+                    <p class="mt-5 text-justify text-base mb-5">A large amount of people are lost their home and goods
+                        in 2024 due to the tragetic flood. Noakhali is underwater for 10 days. The affected people are
+                        trying to recover. Government and NGO are try to aid them. So our team try to aid them. You can
+                        donate money for Noakhali people.</p>
                     <br>
                     <input id="input_amount_noakhali" type="number" placeholder="Write Donation Amount"
                         class="font-semibold outline-none text-xl input w-full">
@@ -105,7 +112,10 @@
                     </div>
                     <h2 class="text-xl font-semibold mt-4 ">Donate <span id="feni_title">For Flood Relief in Feni,
                             Bangladesh</span></h2>
-                    <p class="mt-5 text-justify text-base mb-5">People who are living in Feni are not seen the vast flood ago. A large amount of people are affected in Feni district. Near 74 dead and 68 injured due to flood. The habitat of these are people are trying to recover. Our team raise fund for them. I hope you will contribute for the people.</p>
+                    <p class="mt-5 text-justify text-base mb-5">People who are living in Feni are not seen the vast
+                        flood ago. A large amount of people are affected in Feni district. Near 74 dead and 68 injured
+                        due to flood. The habitat of these are people are trying to recover. Our team raise fund for
+                        them. I hope you will contribute for the people.</p>
                     <br>
                     <input id="input_amount_feni" type="number" placeholder="Write Donation Amount"
                         class="font-semibold outline-none text-xl input w-full">
@@ -127,7 +137,10 @@
                     </div>
                     <h2 class="text-xl font-semibold mt-4 ">Donate <span id="quota_title">for Aid Quota Movement,
                             Bangladesh</span></h2>
-                    <p class="mt-5 text-justify text-base mb-5">In 2024, Our country people seen a movement thats called reform Bangladesh. The Quota movement has made to reduce quota in govt jobs. A large amount of people dead and many of people are injured. Our team try to aid them. I hope you will contribute for them. </p>
+                    <p class="mt-5 text-justify text-base mb-5">In 2024, Our country people seen a movement thats called
+                        reform Bangladesh. The Quota movement has made to reduce quota in govt jobs. A large amount of
+                        people dead and many of people are injured. Our team try to aid them. I hope you will contribute
+                        for them. </p>
                     <br>
                     <input id="input_amount_quota" type="number" placeholder="Write Donation Amount"
                         class="font-semibold outline-none text-xl input w-full">
@@ -149,7 +162,10 @@
                     </div>
                     <h2 class="text-xl font-semibold mt-4 ">Donate <span id="gaza_title">for Gaza People From
                             Bangladesh</span></h2>
-                    <p class="mt-5 text-justify text-base mb-5">Gaza, a part of Palastine now attracked by Israel. A large amount of people are dead. Near 1 Lakh people are dead. The UN unable to find any solution for them. The people of Gaza strip are striving. So our team try to send there food and others essential things. I hope you will contribute for the people.
+                    <p class="mt-5 text-justify text-base mb-5">Gaza, a part of Palastine now attracked by Israel. A
+                        large amount of people are dead. Near 1 Lakh people are dead. The UN unable to find any solution
+                        for them. The people of Gaza strip are striving. So our team try to send there food and others
+                        essential things. I hope you will contribute for the people.
                     </p>
                     <br>
                     <input id="input_amount_gaza" type="number" placeholder="Write Donation Amount"
